@@ -24,6 +24,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\VariationPictureRuleCodeType $VariationPicture
  * @property \DTS\eBaySDK\Trading\Enums\VariationSpecificsRuleCodeType $VariationSpecifics
  * @property \DTS\eBaySDK\Trading\Enums\ValueFormatCodeType $ValueFormat
+ * @property string $UsageConstraint
  */
 class RecommendationValidationRulesType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -102,6 +103,12 @@ class RecommendationValidationRulesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ValueFormat'
+        ],
+        'UsageConstraint' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'UsageConstraint'
         ]
     ];
 
